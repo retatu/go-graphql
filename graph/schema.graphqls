@@ -10,10 +10,10 @@ type Course {
   name: String!
   description: String
   category: Category!
-  chapters: [Chaper!]
+  chapters: [Chapter!]
 }
 
-type Chaper {
+type Chapter {
   id: ID!
   name: String!
   course: Course!
@@ -29,7 +29,7 @@ input NewCourse {
   description: String!
   categoryId: ID!
 }
-input NewCategory {
+input NewChapter {
   name: String!
   courseId: ID!
 }
