@@ -28,7 +28,7 @@ func (r *mutationResolver) CreateCourse(ctx context.Context, input model.NewCour
 
 	for _, v := range r.Categories {
 		if v.ID == input.CategoryID {
-			category := v
+			category = v
 		}
 	}
 
@@ -48,7 +48,7 @@ func (r *mutationResolver) CreateChapter(ctx context.Context, input model.NewCha
 
 	for _, v := range r.Courses {
 		if v.ID == input.CourseID {
-			course := v
+			course = v
 		}
 	}
 
