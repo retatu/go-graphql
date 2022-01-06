@@ -43,6 +43,12 @@ autobind:
 # modelgen, the others will be allowed when binding to fields. Configure them to
 # your liking
 models:
+  Category:
+    model: github.com/retatu/go-graphql/graph/model.Category
+  Course:
+    model: github.com/retatu/go-graphql/graph/model.Course
+  Chatper:
+    model: github.com/retatu/go-graphql/graph/model.Chatper
   ID:
     model:
       - github.com/99designs/gqlgen/graphql.ID
